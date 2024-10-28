@@ -1,0 +1,1 @@
+python src/main.py --traces=cooked_traces/traces_full_train.tar.gz --traces-val=cooked_traces/traces_full_val.tar.gz --traces-test=cooked_traces/traces_full_test.tar.gz "$@"

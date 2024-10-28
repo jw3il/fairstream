@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fair_stream"
+version = "0.1.0"
+description = "Environment for Fair Multimedia Streaming"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    {name = "Jonas Ringsdorf", email = "jonas.ringsdorf@stud.tu-darmstadt.de"},
+    {name = "Jannis Weil", email = "jannis.weil@tu-darmstadt.de"},
+    {name = "Julian Barthel", email = "j.barthel96@gmx.de"},
+]
+
+maintainers = [
+    {name = "Jannis Weil", email = "jannis.weil@tu-darmstadt.de"},
+]
+
+dependencies = [
+    "numpy == 1.26.1",
+    "torch",
+    "ray[data,train,tune,serve]==2.10",
+    "matplotlib >= 3.7", 
+    "pandas >= 1.5",
+    "tensorflow-probability >= 0.19",
+# incompatibility of rllib with later versions
+    "pydantic == 1.10.13",
+    "z3",
+    "tqdm",
+    "gymnasium",
+    "scikit-image",
+    "lz4"
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.mpd"]
