@@ -1,4 +1,7 @@
 # FairStream: Fair Multimedia Streaming Environment
+
+[![arXiv](https://img.shields.io/badge/arXiv-2410.21029-b31b1b.svg)](https://arxiv.org/abs/2410.21029)
+
 FairStream is an asynchronous multi-agent environment compatible with RLlib 2.10.
 
 ![](doc/scenario.svg)
